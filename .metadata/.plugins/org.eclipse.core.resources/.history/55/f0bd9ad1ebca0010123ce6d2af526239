@@ -1,0 +1,32 @@
+package com.TaskWork;
+
+import java.util.Scanner;
+
+public class PositiveEvenOrOdd {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter Number");
+		int no = sc.nextInt();
+		if(no >=0)
+		{
+			if(no%2==0)
+			{
+				System.out.println("No is even : "+no);
+			}
+			else
+			{
+				System.out.println("No is odd : "+no);
+			}
+			System.out.println("No is Positive");
+		}
+		else
+		{
+			System.out.println("No  is Negative");
+		}
+		
+		
+
+	}
+
+}

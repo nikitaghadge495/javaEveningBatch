@@ -1,0 +1,28 @@
+package com.TaskWork;
+
+import java.util.Scanner;
+
+public class TrafficSignal {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the Traffic signal Light between(Red | Green | Yellow)");
+		String color = sc.nextLine();
+		
+		if(color.equals("red"))
+		{
+			System.out.println("Stop");
+		}
+		else if(color.equals("green"))
+		{
+			System.out.println("Go Now");
+		}
+		else
+		{
+			System.out.println("Wait");
+		}
+		 
+
+	}
+
+}

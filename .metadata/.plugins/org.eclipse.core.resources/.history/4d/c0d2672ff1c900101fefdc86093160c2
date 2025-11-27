@@ -1,0 +1,44 @@
+package com.basicPrograms;
+
+import java.util.Scanner;
+
+public class AlldataTypeWithScanner {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Enter Intger Number : ");
+		int n = sc.nextInt();
+		
+		System.out.println("Enter Float Number : ");
+		float f = sc.nextFloat();
+		
+        System.out.println("Enter Char : ");
+        char c = sc.next().charAt(0);
+        
+        System.out.println("Enter String : ");
+        String str = sc.nextLine();
+        
+        System.out.println("Enter Double : ");
+        double d = sc.nextDouble();
+        
+        System.out.println("Enter Long : ");
+        long l = sc.nextLong();
+        
+        System.out.println("Enter Boolean values : ");
+        boolean b = sc.hasNextBoolean();
+        
+        System.out.println("Integer No is : "+n);
+        System.out.println("Float No is : "+f);
+        System.out.println("char values : "+c);
+        System.out.println("String values  is : "+str);
+        System.out.println("Double No is : "+d);
+        System.out.println("Long No is : "+l);
+        System.out.println("Boolean  values is : "+b);
+        
+        
+        
+        
+	}
+
+}

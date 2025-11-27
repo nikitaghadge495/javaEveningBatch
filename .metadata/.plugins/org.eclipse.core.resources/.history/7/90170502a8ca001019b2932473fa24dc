@@ -1,0 +1,49 @@
+package com.practices;
+
+import java.util.Scanner;
+
+class vehical{
+		String Brand;
+		int speed;
+		Scanner sc = new Scanner(System.in);
+		
+		vehical()
+	    {
+			System.out.println("Enter car Brand : ");
+		    Brand = sc.nextLine();
+		    
+		    System.out.println("Enter car speed : ");
+		    speed = sc.nextInt();
+	    }
+	    public void displayInfo() {
+	    	System.out.println("car brand is : "+Brand);
+	    	System.out.println("car Speed is : "+speed);
+	    }
+	    
+	    
+    
+}
+
+class car extends vehical
+{
+	
+	int seat;
+	Scanner sc = new Scanner(System.in);
+	
+	car()
+	{
+		System.out.println("Enter car speed : ");
+	    seat = sc.nextInt();
+	}
+}
+}
+public class VehicalDemo {
+
+	public static void main(String[] args) {
+		
+		vehical v1 = new vehical();
+		v1.displayInfo();
+
+	}
+
+}

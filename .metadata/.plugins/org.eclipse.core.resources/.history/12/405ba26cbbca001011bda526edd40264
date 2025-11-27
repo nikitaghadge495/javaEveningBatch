@@ -1,0 +1,22 @@
+package com.controlStatment;
+
+public class TestIfElseLedder {
+
+	public static void main(String[] args) {
+
+		int no =20;
+		if(no <0)
+		{
+			System.out.println("Negative Number...");
+		}
+		else if(no>0)
+		{
+			System.out.println("positive number....");
+		}
+		else 
+		{
+			System.out.println("no is zero");
+		}
+	}
+
+}

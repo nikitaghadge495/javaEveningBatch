@@ -1,0 +1,86 @@
+package com.practices;
+
+import java.util.Scanner;
+
+public class BankAccount {
+
+	 static int  balance = 10000;
+	public static void deposit()
+	{
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter amount for deposit : ");
+		int amt = sc.nextInt();
+		balance +=amt;
+		System.out.println("Amount deposit successfully.......");
+	    System.out.println("total amount is : "+balance);
+		
+	}
+	public static void withDraw() {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter amount for WithDraw : ");
+		int amt = sc.nextInt();
+		if(amt > balance)
+		{
+			System.out.println("Ops! ,Insufficent balance.....");
+		}
+		else
+		{
+			balance -=amt;
+		
+			System.out.println("Amount WithDraw successfully.......");
+		    System.out.println("total amount is : "+balance);
+		}
+		
+	}
+	public static void balance()
+	{
+		
+		System.out.println("total Balance : "+balance);
+		System.out.println("Account Balance Featch Successfully!!!");
+	}
+	public static void main(String[] args) 
+	{
+		int accNo,holderNo;
+		
+		int choice ;
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Enter Account No :");
+		accNo = sc.nextInt();
+		System.out.println("Enter holder No :");
+		holderNo = sc.nextInt();
+		
+		
+		do {
+		System.out.println("1.check Balance");
+		System.out.println("2.Deposit");
+		System.out.println("3.WithDraw");
+		System.out.println("4.Exit");
+		
+		System.out.println("Enter choice : ");
+		choice = sc.nextInt();
+		
+		switch(choice) {
+		
+		     case 1 : balance();
+		     break;
+		     case 2 : deposit();
+		     break;
+		     
+		     case 3 : withDraw();
+		     break;
+		     
+		     case 4 : System.out.println("thans for visiting ");
+		     
+		     break;
+		     default : System.out.println("Please enter valid choice");
+		}
+		
+		
+	 
+		 
+	}while(choice !=4);
+
+	
+	}
+}
